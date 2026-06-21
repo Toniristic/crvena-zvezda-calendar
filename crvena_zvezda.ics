@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tony Ristic//Crvena Zvezda Calendar//SR
+X-WR-CALNAME:🔴⚪ Crvena zvezda
+X-WR-TIMEZONE:Europe/Belgrade
+BEGIN:VEVENT
+SUMMARY:🔴⚪ Crvena zvezda - Macva Sabac
+DTSTART;TZID=Europe/Belgrade:20260718T090000
+DTEND;TZID=Europe/Belgrade:20260718T110000
+DTSTAMP:20260621T120909Z
+UID:crvenazvezdamacvasabacjuly182026@cz-calendar
+DESCRIPTION:Takmičenje: Super Liga\nIzvor: https://www.fotmob.com/teams/8
+ 687/overview/fk-crvena-zvezda
+LOCATION:Stadion Rajko Mitić\, Beograd
+END:VEVENT
+END:VCALENDAR
