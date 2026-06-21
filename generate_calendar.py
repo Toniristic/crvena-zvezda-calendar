@@ -1,56 +1,32 @@
 from datetime import datetime, timedelta
 import re
 import requests
+from bs4 import BeautifulSoup
 from icalendar import Calendar, Event
 import pytz
 
 OUTPUT_FILE = "crvena_zvezda.ics"
 TZ = pytz.timezone("Europe/Belgrade")
 
+ZVEZDA_URL = "https://www.crvenazvezdafk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27"
 TEAM_ID = "133987"
 API_URL = f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={TEAM_ID}"
 
-MANUAL_FIXTURES = [
-    ("2026-07-18", "Crvena zvezda", "Mačva", "Superliga Srbije"),
-    ("2026-07-25", "Crvena zvezda", "Vojvodina", "Superliga Srbije"),
-    ("2026-08-01", "Radnik", "Crvena zvezda", "Superliga Srbije"),
-    ("2026-08-08", "Crvena zvezda", "Novi Pazar", "Superliga Srbije"),
-    ("2026-08-15", "Železničar", "Crvena zvezda", "Superliga Srbije"),
-    ("2026-08-22", "Crvena zvezda", "Čukarički", "Superliga Srbije"),
-    ("2026-08-29", "Zemun", "Crvena zvezda", "Superliga Srbije"),
-    ("2026-09-05", "Crvena zvezda", "Partizan", "Superliga Srbije"),
-    ("2026-09-12", "IMT", "Crvena zvezda", "Superliga Srbije"),
-    ("2026-09-19", "Crvena zvezda", "Radnički Niš", "Superliga Srbije"),
-    ("2026-10-10", "Radnički 1923", "Crvena zvezda", "Superliga Srbije"),
-    ("2026-10-17", "Crvena zvezda", "Mladost", "Superliga Srbije"),
-    ("2026-10-24", "OFK Beograd", "Crvena zvezda", "Superliga Srbije"),
-    ("2026-11-01", "Mačva", "Crvena zvezda", "Superliga Srbije"),
-    ("2026-11-07", "Vojvodina", "Crvena zvezda", "Superliga Srbije"),
-    ("2026-11-21", "Crvena zvezda", "Radnik", "Superliga Srbije"),
-    ("2026-11-28", "Novi Pazar", "Crvena zvezda", "Superliga Srbije"),
-    ("2026-12-06", "Crvena zvezda", "Železničar", "Superliga Srbije"),
-    ("2027-02-06", "Čukarički", "Crvena zvezda", "Superliga Srbije"),
-    ("2027-02-13", "Crvena zvezda", "Zemun", "Superliga Srbije"),
-    ("2027-02-20", "Partizan", "Crvena zvezda", "Superliga Srbije"),
-    ("2027-02-27", "Crvena zvezda", "IMT", "Superliga Srbije"),
-    ("2027-03-07", "Radnički Niš", "Crvena zvezda", "Superliga Srbije"),
-    ("2027-03-13", "Crvena zvezda", "Radnički 1923", "Superliga Srbije"),
-    ("2027-03-20", "Mladost", "Crvena zvezda", "Superliga Srbije"),
-    ("2027-04-03", "Crvena zvezda", "OFK Beograd", "Superliga Srbije"),
-]
-
+MONTHS = {
+    "januar": 1, "februar": 2, "mart": 3, "april": 4,
+    "maj": 5, "jun": 6, "jul": 7, "avgust": 8,
+    "septembar": 9, "oktobar": 10, "novembar": 11, "decembar": 12,
+}
 
 def norm(s):
-    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+    s = (s or "").lower()
+    return re.sub(r"[^a-z0-9čćžšđ]", "", s)
 
+def make_start(day, month_name, year):
+    return TZ.localize(datetime(int(year), MONTHS[month_name.lower()], int(day), 9, 0))
 
-def start_at_9(date_str):
-    d = datetime.strptime(date_str, "%Y-%m-%d")
-    return TZ.localize(datetime(d.year, d.month, d.day, 9, 0))
-
-
-def make_event(cal, home, away, start, league, venue="", source=""):
-    title = f"🔴⚪ {home} - {away}" if "Crvena" in home else f"⚪🔴 {home} - {away}"
+def add_event(cal, home, away, start, league, venue="", source=""):
+    title = f"🔴⚪ {home} - {away}" if norm(home) == norm("Crvena zvezda") else f"⚪🔴 {home} - {away}"
 
     ev = Event()
     ev.add("summary", title)
@@ -62,11 +38,31 @@ def make_event(cal, home, away, start, league, venue="", source=""):
     ev.add("uid", f"{norm(home)}-{norm(away)}-{start.strftime('%Y%m%d%H%M')}@cz-calendar")
     cal.add_component(ev)
 
+def fetch_official_superliga():
+    html = requests.get(ZVEZDA_URL, headers={"User-Agent": "Mozilla/5.0"}, timeout=30).text
+    text = BeautifulSoup(html, "html.parser").get_text("\n", strip=True)
+
+    pattern = re.compile(
+        r"(\d+)\s*\.\s*kolo\s*-\s*(\d{1,2})\.\s*([a-zčćžšđ]+)\s*(2026|2027)\.\s*\n+\s*([^\n]+?)\s*-\s*([^\n]+)",
+        re.IGNORECASE
+    )
+
+    fixtures = []
+    for _, day, month, year, home, away in pattern.findall(text):
+        start = make_start(day, month, year)
+        fixtures.append({
+            "home": home.strip(),
+            "away": away.strip(),
+            "start": start,
+            "league": "Superliga Srbije",
+            "venue": "Stadion Rajko Mitić, Beograd" if norm(home) == norm("Crvena zvezda") else "",
+            "source": ZVEZDA_URL,
+        })
+    return fixtures
 
 def api_start(e):
     date_str = e.get("dateEvent")
     time_str = e.get("strTime")
-
     if not date_str:
         return None
 
@@ -74,8 +70,28 @@ def api_start(e):
         raw = f"{date_str} {time_str[:8]}"
         return pytz.utc.localize(datetime.strptime(raw, "%Y-%m-%d %H:%M:%S")).astimezone(TZ)
 
-    return start_at_9(date_str)
+    d = datetime.strptime(date_str, "%Y-%m-%d")
+    return TZ.localize(datetime(d.year, d.month, d.day, 9, 0))
 
+def fetch_thesportsdb():
+    fixtures = []
+    try:
+        data = requests.get(API_URL, timeout=30).json()
+        for e in data.get("events") or []:
+            start = api_start(e)
+            if not start:
+                continue
+            fixtures.append({
+                "home": e.get("strHomeTeam") or "",
+                "away": e.get("strAwayTeam") or "",
+                "start": start,
+                "league": e.get("strLeague") or "Nepoznato takmičenje",
+                "venue": e.get("strVenue") or "",
+                "source": "TheSportsDB",
+            })
+    except Exception as ex:
+        print(f"TheSportsDB preskočen: {ex}")
+    return fixtures
 
 def main():
     cal = Calendar()
@@ -84,47 +100,27 @@ def main():
     cal.add("x-wr-calname", "🔴⚪ Crvena zvezda")
     cal.add("x-wr-timezone", "Europe/Belgrade")
 
+    fixtures = fetch_official_superliga() + fetch_thesportsdb()
+    now = datetime.now(TZ)
     seen = set()
+    count = 0
 
-    for date_str, home, away, league in MANUAL_FIXTURES:
-        start = start_at_9(date_str)
-        key = (start.strftime("%Y-%m-%d"), norm(home), norm(away))
+    for f in fixtures:
+        if f["start"] < now:
+            continue
+
+        key = (f["start"].strftime("%Y-%m-%d"), norm(f["home"]), norm(f["away"]))
+        if key in seen:
+            continue
         seen.add(key)
 
-        venue = "Stadion Rajko Mitić, Beograd" if "Crvena" in home else ""
-        make_event(cal, home, away, start, league, venue, "FK Crvena zvezda - zvanični raspored")
+        add_event(cal, f["home"], f["away"], f["start"], f["league"], f["venue"], f["source"])
+        count += 1
 
-    try:
-        data = requests.get(API_URL, timeout=30).json()
-        for e in data.get("events") or []:
-            home = e.get("strHomeTeam") or ""
-            away = e.get("strAwayTeam") or ""
-            start = api_start(e)
+    with open(OUTPUT_FILE, "wb") as file:
+        file.write(cal.to_ical())
 
-            if not start:
-                continue
-
-            key = (start.strftime("%Y-%m-%d"), norm(home), norm(away))
-            if key in seen:
-                continue
-
-            make_event(
-                cal,
-                home,
-                away,
-                start,
-                e.get("strLeague") or "Nepoznato takmičenje",
-                e.get("strVenue") or "",
-                "TheSportsDB"
-            )
-    except Exception as ex:
-        print(f"TheSportsDB preskočen: {ex}")
-
-    with open(OUTPUT_FILE, "wb") as f:
-        f.write(cal.to_ical())
-
-    print(f"Generated {OUTPUT_FILE}")
-
+    print(f"Generated {OUTPUT_FILE} with {count} future events.")
 
 if __name__ == "__main__":
     main()
