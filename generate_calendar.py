@@ -1,73 +1,103 @@
 from datetime import datetime, timedelta
 import re
 import requests
-from bs4 import BeautifulSoup
 from icalendar import Calendar, Event
 import pytz
 
-TEAM_URL = "https://www.fotmob.com/teams/8687/overview/fk-crvena-zvezda"
+TEAM_ID = "133987"
+API_URL = f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={TEAM_ID}"
 OUTPUT_FILE = "crvena_zvezda.ics"
 TZ = pytz.timezone("Europe/Belgrade")
 
-def add_event(cal, date_str, competition, side, opponent):
-    d = datetime.strptime(date_str, "%B %d, %Y")
-    start = TZ.localize(datetime(d.year, d.month, d.day, 9, 0))
-    end = start + timedelta(hours=2)
 
-    if side == "vs":
-        title = f"🔴⚪ Crvena zvezda - {opponent}"
-        location = "Stadion Rajko Mitić, Beograd"
-    else:
-        title = f"⚪🔴 {opponent} - Crvena zvezda"
-        location = ""
+def clean(text):
+    return (text or "").strip()
 
-    event = Event()
-    event.add("summary", title)
-    event.add("dtstart", start)
-    event.add("dtend", end)
-    event.add("dtstamp", datetime.now(pytz.utc))
-    event.add("location", location)
-    event.add("description", f"Takmičenje: {competition}\nIzvor: {TEAM_URL}")
-    event.add("uid", re.sub(r"[^a-zA-Z0-9]", "", title + date_str).lower() + "@cz-calendar")
-    cal.add_component(event)
 
-def main():
-    html = requests.get(
-        TEAM_URL,
-        headers={"User-Agent": "Mozilla/5.0"},
-        timeout=30
-    ).text
+def parse_start(event):
+    date_str = event.get("dateEvent")
+    time_str = event.get("strTime")
 
-    text = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+    if not date_str:
+        return None
 
-    pattern = re.compile(
-        r"(January|February|March|April|May|June|July|August|September|October|November|December) "
-        r"(\d{1,2}), (2026|2027): ([^-]+) - (vs|at) ([A-Za-z0-9čćžšđČĆŽŠĐ ./'-]+)"
-    )
+    if time_str and time_str not in ("00:00:00", "00:00"):
+        raw = f"{date_str} {time_str[:8]}"
+        dt_utc = pytz.utc.localize(datetime.strptime(raw, "%Y-%m-%d %H:%M:%S"))
+        return dt_utc.astimezone(TZ)
 
-    matches = pattern.findall(text)
+    d = datetime.strptime(date_str, "%Y-%m-%d")
+    return TZ.localize(datetime(d.year, d.month, d.day, 9, 0))
 
+
+def make_uid(title, start):
+    base = title + start.strftime("%Y%m%d%H%M")
+    return re.sub(r"[^a-zA-Z0-9]", "", base).lower() + "@crvena-zvezda-calendar"
+
+
+def build_calendar(events):
     cal = Calendar()
     cal.add("prodid", "-//Tony Ristic//Crvena Zvezda Calendar//SR")
     cal.add("version", "2.0")
     cal.add("x-wr-calname", "🔴⚪ Crvena zvezda")
     cal.add("x-wr-timezone", "Europe/Belgrade")
 
-    count = 0
-    for month, day, year, competition, side, opponent in matches:
-        date_str = f"{month} {day}, {year}"
-        add_event(cal, date_str, competition.strip(), side, opponent.strip())
-        count += 1
+    now = datetime.now(pytz.utc)
 
-    if count == 0:
-        # fallback test event so workflow never fails
-        add_event(cal, "July 18, 2026", "Super Liga", "vs", "Macva Sabac")
-        count = 1
+    for e in events:
+        home = clean(e.get("strHomeTeam"))
+        away = clean(e.get("strAwayTeam"))
+        league = clean(e.get("strLeague"))
+        venue = clean(e.get("strVenue"))
+        event_url = clean(e.get("idEvent"))
+
+        start = parse_start(e)
+        if not start:
+            continue
+
+        if "Crvena" in home or "Red Star" in home:
+            title = f"🔴⚪ {home} - {away}"
+        else:
+            title = f"⚪🔴 {home} - {away}"
+
+        ev = Event()
+        ev.add("summary", title)
+        ev.add("dtstart", start)
+        ev.add("dtend", start + timedelta(hours=2))
+        ev.add("dtstamp", now)
+        ev.add("uid", make_uid(title, start))
+        ev.add("location", venue)
+        ev.add(
+            "description",
+            f"Takmičenje: {league}\n"
+            f"Izvor: TheSportsDB\n"
+            f"Event ID: {event_url}"
+        )
+
+        cal.add_component(ev)
 
     with open(OUTPUT_FILE, "wb") as f:
         f.write(cal.to_ical())
 
-    print(f"Generated {OUTPUT_FILE} with {count} events.")
+
+def main():
+    response = requests.get(API_URL, timeout=30)
+    response.raise_for_status()
+
+    data = response.json()
+    events = data.get("events") or []
+
+    future_events = []
+    now = datetime.now(TZ)
+
+    for e in events:
+        start = parse_start(e)
+        if start and start >= now:
+            future_events.append(e)
+
+    build_calendar(future_events)
+    print(f"Generated {OUTPUT_FILE} with {len(future_events)} future events.")
+
 
 if __name__ == "__main__":
     main()
