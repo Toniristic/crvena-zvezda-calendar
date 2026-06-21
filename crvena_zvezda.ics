@@ -4,13 +4,13 @@ PRODID:-//Tony Ristic//Crvena Zvezda Calendar//SR
 X-WR-CALNAME:🔴⚪ Crvena zvezda
 X-WR-TIMEZONE:Europe/Belgrade
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - Macva Sabac
-DTSTART;TZID=Europe/Belgrade:20260718T090000
-DTEND;TZID=Europe/Belgrade:20260718T110000
-DTSTAMP:20260621T120909Z
-UID:crvenazvezdamacvasabacjuly182026@cz-calendar
-DESCRIPTION:Takmičenje: Super Liga\nIzvor: https://www.fotmob.com/teams/8
- 687/overview/fk-crvena-zvezda
-LOCATION:Stadion Rajko Mitić\, Beograd
+SUMMARY:🔴⚪ Crvena Zvezda - SKU Amstetten
+DTSTART;TZID=Europe/Belgrade:20260625T173000
+DTEND;TZID=Europe/Belgrade:20260625T193000
+DTSTAMP:20260621T121740Z
+UID:crvenazvezdaskuamstetten202606251730@crvena-zvezda-calendar
+DESCRIPTION:Takmičenje: Club Friendlies\nIzvor: TheSportsDB\nEvent ID: 24
+ 79952
+LOCATION:Stadion Rajko Mitić
 END:VEVENT
 END:VCALENDAR
