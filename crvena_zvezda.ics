@@ -7,7 +7,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Mačva
 DTSTART;TZID=Europe/Belgrade:20260718T090000
 DTEND;TZID=Europe/Belgrade:20260718T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-mačva-202607180900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -17,7 +17,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Vojvodina
 DTSTART;TZID=Europe/Belgrade:20260725T090000
 DTEND;TZID=Europe/Belgrade:20260725T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-vojvodina-202607250900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -27,7 +27,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Radnik - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20260801T090000
 DTEND;TZID=Europe/Belgrade:20260801T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:radnik-crvenazvezda-202608010900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -37,7 +37,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Novi Pazar
 DTSTART;TZID=Europe/Belgrade:20260808T090000
 DTEND;TZID=Europe/Belgrade:20260808T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-novipazar-202608080900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -47,7 +47,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Železničar - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20260815T090000
 DTEND;TZID=Europe/Belgrade:20260815T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:železničar-crvenazvezda-202608150900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -57,7 +57,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Čukarički
 DTSTART;TZID=Europe/Belgrade:20260822T090000
 DTEND;TZID=Europe/Belgrade:20260822T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-čukarički-202608220900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -67,7 +67,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Zemun - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20260829T090000
 DTEND;TZID=Europe/Belgrade:20260829T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:zemun-crvenazvezda-202608290900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -77,7 +77,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Partizan
 DTSTART;TZID=Europe/Belgrade:20260905T090000
 DTEND;TZID=Europe/Belgrade:20260905T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-partizan-202609050900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -87,7 +87,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 IMT - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20260912T090000
 DTEND;TZID=Europe/Belgrade:20260912T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:imt-crvenazvezda-202609120900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -97,7 +97,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Radnički Niš
 DTSTART;TZID=Europe/Belgrade:20260919T090000
 DTEND;TZID=Europe/Belgrade:20260919T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-radničkiniš-202609190900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -107,7 +107,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Radnički 1923 - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20261010T090000
 DTEND;TZID=Europe/Belgrade:20261010T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:radnički1923-crvenazvezda-202610100900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -117,7 +117,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Mladost
 DTSTART;TZID=Europe/Belgrade:20261017T090000
 DTEND;TZID=Europe/Belgrade:20261017T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-mladost-202610170900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -127,7 +127,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 OFK Beograd - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20261024T090000
 DTEND;TZID=Europe/Belgrade:20261024T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:ofkbeograd-crvenazvezda-202610240900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -137,7 +137,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Mačva - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20261101T090000
 DTEND;TZID=Europe/Belgrade:20261101T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:mačva-crvenazvezda-202611010900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -147,7 +147,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Vojvodina - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20261107T090000
 DTEND;TZID=Europe/Belgrade:20261107T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:vojvodina-crvenazvezda-202611070900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -157,7 +157,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Radnik
 DTSTART;TZID=Europe/Belgrade:20261121T090000
 DTEND;TZID=Europe/Belgrade:20261121T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-radnik-202611210900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -167,7 +167,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Novi Pazar - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20261128T090000
 DTEND;TZID=Europe/Belgrade:20261128T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:novipazar-crvenazvezda-202611280900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -177,7 +177,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Železničar
 DTSTART;TZID=Europe/Belgrade:20261206T090000
 DTEND;TZID=Europe/Belgrade:20261206T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-železničar-202612060900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -187,7 +187,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Čukarički - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20270206T090000
 DTEND;TZID=Europe/Belgrade:20270206T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:čukarički-crvenazvezda-202702060900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -197,7 +197,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Zemun
 DTSTART;TZID=Europe/Belgrade:20270213T090000
 DTEND;TZID=Europe/Belgrade:20270213T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-zemun-202702130900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -207,7 +207,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Partizan - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20270220T090000
 DTEND;TZID=Europe/Belgrade:20270220T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:partizan-crvenazvezda-202702200900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -217,7 +217,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - IMT
 DTSTART;TZID=Europe/Belgrade:20270227T090000
 DTEND;TZID=Europe/Belgrade:20270227T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-imt-202702270900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -227,7 +227,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Radnički Niš - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20270307T090000
 DTEND;TZID=Europe/Belgrade:20270307T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:radničkiniš-crvenazvezda-202703070900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -237,7 +237,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Radnički 1923
 DTSTART;TZID=Europe/Belgrade:20270313T090000
 DTEND;TZID=Europe/Belgrade:20270313T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-radnički1923-202703130900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -247,7 +247,7 @@ BEGIN:VEVENT
 SUMMARY:⚪🔴 Mladost - Crvena zvezda
 DTSTART;TZID=Europe/Belgrade:20270320T090000
 DTEND;TZID=Europe/Belgrade:20270320T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:mladost-crvenazvezda-202703200900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -257,7 +257,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - OFK Beograd
 DTSTART;TZID=Europe/Belgrade:20270403T090000
 DTEND;TZID=Europe/Belgrade:20270403T110000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-ofkbeograd-202704030900@cz-calendar
 DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
  fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
@@ -267,7 +267,7 @@ BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena Zvezda - Blau-Weiß Linz
 DTSTART;TZID=Europe/Belgrade:20260703T170000
 DTEND;TZID=Europe/Belgrade:20260703T190000
-DTSTAMP:20260630T122337Z
+DTSTAMP:20260701T133957Z
 UID:crvenazvezda-blauweilinz-202607031700@cz-calendar
 DESCRIPTION:Takmičenje: Club Friendlies\nIzvor: TheSportsDB
 LOCATION:Stadion Rajko Mitić
