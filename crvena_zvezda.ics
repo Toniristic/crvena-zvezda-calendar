@@ -4,123 +4,283 @@ PRODID:-//Tony Ristic//Crvena Zvezda Calendar//SR
 X-WR-CALNAME:🔴⚪ Crvena zvezda
 X-WR-TIMEZONE:Europe/Belgrade
 BEGIN:VEVENT
+SUMMARY:🔴⚪ Crvena zvezda - Inter Eskaldes
+DTSTART:20261105T174500Z
+DTEND:20261105T194500Z
+DTSTAMP:20261104T115503Z
+UID:2026-27-ligakonferencije-3-crvenazvezda-intereskaldes@cz-calendar
+SEQUENCE:0
+DESCRIPTION:Takmičenje: Liga konferencije\nKolo/faza: 3\nPočetak: potvr
+ đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
+ tps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda---inter-eskald
+ es
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION RAJKO MITIĆ
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-ligakonferencije-3-crvenazvezda-intereskaldes
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚪🔴 Vojvodina - Crvena zvezda
-DTSTART;TZID=Europe/Belgrade:20261107T090000
-DTEND;TZID=Europe/Belgrade:20261107T110000
-DTSTAMP:20261104T115409Z
+DTSTART:20261108T180000Z
+DTEND:20261108T200000Z
+DTSTAMP:20261104T115503Z
 UID:vojvodina-crvenazvezda-202611070900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 15\nPočetak: potvr
+ đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
+ tps://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?script=lat\nh
+ ttps://www.crvenazvezdafk.com/sr-latn/utakmice/vojvodina---crvena-zvezda-3
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION KARAĐORĐE
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-15-vojvodina-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - Radnik
-DTSTART;TZID=Europe/Belgrade:20261121T090000
-DTEND;TZID=Europe/Belgrade:20261121T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:🔴⚪ Crvena zvezda - Radnik (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+DTSTAMP:20261104T115503Z
 UID:crvenazvezda-radnik-202611210900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:Stadion Rajko Mitić\, Beograd
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 16\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda--
+ -radnik-2
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION RAJKO MITIĆ
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-16-crvenazvezda-radnik
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚪🔴 Novi Pazar - Crvena zvezda
-DTSTART;TZID=Europe/Belgrade:20261128T090000
-DTEND;TZID=Europe/Belgrade:20261128T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:⚪🔴 Gent - Crvena zvezda
+DTSTART:20261126T200000Z
+DTEND:20261126T220000Z
+DTSTAMP:20261104T115503Z
+UID:2026-27-ligakonferencije-4-gent-crvenazvezda@cz-calendar
+SEQUENCE:0
+DESCRIPTION:Takmičenje: Liga konferencije\nKolo/faza: 4\nPočetak: potvr
+ đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
+ tps://www.crvenazvezdafk.com/sr-latn/utakmice/gent---crvena-zvezda
+LAST-MODIFIED:20261104T115503Z
+LOCATION:KAA GENT ARENA
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-ligakonferencije-4-gent-crvenazvezda
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚪🔴 Novi Pazar - Crvena zvezda (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+DTSTAMP:20261104T115503Z
 UID:novipazar-crvenazvezda-202611280900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 17\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/novi-pazar---cr
+ vena-zvezda-4
+LAST-MODIFIED:20261104T115503Z
+LOCATION:GRADSKI STADION U NOVOM PAZARU
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-17-novipazar-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - Železničar
-DTSTART;TZID=Europe/Belgrade:20261206T090000
-DTEND;TZID=Europe/Belgrade:20261206T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:🔴⚪ Crvena zvezda - Železničar (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+DTSTAMP:20261104T115503Z
 UID:crvenazvezda-železničar-202612060900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:Stadion Rajko Mitić\, Beograd
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 18\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda--
+ -zheleznichar-2
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION RAJKO MITIĆ
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-18-crvenazvezda-zeleznicar
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚪🔴 Čukarički - Crvena zvezda
-DTSTART;TZID=Europe/Belgrade:20270206T090000
-DTEND;TZID=Europe/Belgrade:20270206T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:⚪🔴 Iberija - Crvena zvezda
+DTSTART:20261210T174500Z
+DTEND:20261210T194500Z
+DTSTAMP:20261104T115503Z
+UID:2026-27-ligakonferencije-5-iberija-crvenazvezda@cz-calendar
+SEQUENCE:0
+DESCRIPTION:Takmičenje: Liga konferencije\nKolo/faza: 5\nPočetak: potvr
+ đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
+ tps://www.crvenazvezdafk.com/sr-latn/utakmice/iberija---crvena-zvezda
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION MIHAIL MESHI I
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-ligakonferencije-5-iberija-crvenazvezda
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🔴⚪ Crvena zvezda - Trabzonspor
+DTSTART:20261217T200000Z
+DTEND:20261217T220000Z
+DTSTAMP:20261104T115503Z
+UID:2026-27-ligakonferencije-6-crvenazvezda-trabzonspor@cz-calendar
+SEQUENCE:0
+DESCRIPTION:Takmičenje: Liga konferencije\nKolo/faza: 6\nPočetak: potvr
+ đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
+ tps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda---trabzonspor
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION RAJKO MITIĆ
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-ligakonferencije-6-crvenazvezda-trabzonspor
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚪🔴 Čukarički - Crvena zvezda (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+DTSTAMP:20261104T115503Z
 UID:čukarički-crvenazvezda-202702060900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 19\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/chukarichki---c
+ rvena-zvezda-2
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION FK ČUKARIČKI
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-19-cukaricki-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - Zemun
-DTSTART;TZID=Europe/Belgrade:20270213T090000
-DTEND;TZID=Europe/Belgrade:20270213T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:🔴⚪ Crvena zvezda - Zemun (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+DTSTAMP:20261104T115503Z
 UID:crvenazvezda-zemun-202702130900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:Stadion Rajko Mitić\, Beograd
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 20\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda--
+ -zemun
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION RAJKO MITIĆ
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-20-crvenazvezda-zemun
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚪🔴 Partizan - Crvena zvezda
-DTSTART;TZID=Europe/Belgrade:20270220T090000
-DTEND;TZID=Europe/Belgrade:20270220T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:⚪🔴 Partizan - Crvena zvezda (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+DTSTAMP:20261104T115503Z
 UID:partizan-crvenazvezda-202702200900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 21\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/partizan---crve
+ na-zvezda-2
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION PARTIZANA
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-21-partizan-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - IMT
-DTSTART;TZID=Europe/Belgrade:20270227T090000
-DTEND;TZID=Europe/Belgrade:20270227T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:🔴⚪ Crvena zvezda - IMT (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+DTSTAMP:20261104T115503Z
 UID:crvenazvezda-imt-202702270900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:Stadion Rajko Mitić\, Beograd
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 22\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda--
+ -imt-2
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION RAJKO MITIĆ
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-22-crvenazvezda-imt
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚪🔴 Radnički Niš - Crvena zvezda
-DTSTART;TZID=Europe/Belgrade:20270307T090000
-DTEND;TZID=Europe/Belgrade:20270307T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:⚪🔴 Radnički Niš - Crvena zvezda (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+DTSTAMP:20261104T115503Z
 UID:radničkiniš-crvenazvezda-202703070900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 23\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/radnichki-nish-
+ --crvena-zvezda
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION ČAIR
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-23-radnickinis-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - Radnički 1923
-DTSTART;TZID=Europe/Belgrade:20270313T090000
-DTEND;TZID=Europe/Belgrade:20270313T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:🔴⚪ Crvena zvezda - Radnički 1923 (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+DTSTAMP:20261104T115503Z
 UID:crvenazvezda-radnički1923-202703130900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:Stadion Rajko Mitić\, Beograd
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 24\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda--
+ -radnichki-1923-2
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION RAJKO MITIĆ
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-24-crvenazvezda-radnicki1923
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚪🔴 Mladost - Crvena zvezda
-DTSTART;TZID=Europe/Belgrade:20270320T090000
-DTEND;TZID=Europe/Belgrade:20270320T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:⚪🔴 Mladost - Crvena zvezda (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+DTSTAMP:20261104T115503Z
 UID:mladost-crvenazvezda-202703200900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 25\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/mladost---crven
+ a-zvezda-3
+LAST-MODIFIED:20261104T115503Z
+LOCATION:SRC MR RADOŠ MILOVANOVIĆ
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-25-mladost-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - OFK Beograd
-DTSTART;TZID=Europe/Belgrade:20270403T090000
-DTEND;TZID=Europe/Belgrade:20270403T110000
-DTSTAMP:20261104T115409Z
+SUMMARY:🔴⚪ Crvena zvezda - OFK Beograd (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+DTSTAMP:20261104T115503Z
 UID:crvenazvezda-ofkbeograd-202704030900@cz-calendar
-DESCRIPTION:Takmičenje: Superliga Srbije\nIzvor: https://www.crvenazvezda
- fk.com/sr-latn/vesti/zvezdin-raspored-u-superligi-za-sezonu-2026-27
-LOCATION:Stadion Rajko Mitić\, Beograd
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 26\nVreme početka n
+ ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
+ .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
+ cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda--
+ -ofk-beograd-6
+LAST-MODIFIED:20261104T115503Z
+LOCATION:STADION RAJKO MITIĆ
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-superligasrbije-26-crvenazvezda-ofkbeograd
 END:VEVENT
 END:VCALENDAR

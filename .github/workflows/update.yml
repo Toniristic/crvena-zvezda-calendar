@@ -1,12 +1,24 @@
 name: Update Zvezda Calendar
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'generate_calendar.py'
+      - 'requirements.txt'
+      - 'tests/**'
+      - '.github/workflows/update.yml'
+  pull_request:
   schedule:
     - cron: '0 4 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: zvezda-calendar-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -21,9 +33,16 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python generate_calendar.py
+      - name: Regression tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Generate and validate official schedule
+        if: github.event_name != 'pull_request'
+        run: python generate_calendar.py
 
       - name: Commit
+        if: github.event_name != 'pull_request'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update calendar
+          file_pattern: crvena_zvezda.ics
