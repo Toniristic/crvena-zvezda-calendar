@@ -4,23 +4,6 @@ PRODID:-//Tony Ristic//Crvena Zvezda Calendar//SR
 X-WR-CALNAME:🔴⚪ Crvena zvezda
 X-WR-TIMEZONE:Europe/Belgrade
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - Inter Eskaldes
-DTSTART:20261105T174500Z
-DTEND:20261105T194500Z
-DTSTAMP:20261104T115503Z
-UID:2026-27-ligakonferencije-3-crvenazvezda-intereskaldes@cz-calendar
-SEQUENCE:0
-DESCRIPTION:Takmičenje: Liga konferencije\nKolo/faza: 3\nPočetak: potvr
- đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
- tps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda---inter-eskald
- es
-LAST-MODIFIED:20261104T115503Z
-LOCATION:STADION RAJKO MITIĆ
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-MATCH-ID:2026-27-ligakonferencije-3-crvenazvezda-intereskaldes
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:⚪🔴 Vojvodina - Crvena zvezda
 DTSTART:20261108T180000Z
 DTEND:20261108T200000Z
