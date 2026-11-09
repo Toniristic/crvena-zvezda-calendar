@@ -4,23 +4,6 @@ PRODID:-//Tony Ristic//Crvena Zvezda Calendar//SR
 X-WR-CALNAME:🔴⚪ Crvena zvezda
 X-WR-TIMEZONE:Europe/Belgrade
 BEGIN:VEVENT
-SUMMARY:⚪🔴 Vojvodina - Crvena zvezda
-DTSTART:20261108T180000Z
-DTEND:20261108T200000Z
-DTSTAMP:20261104T115503Z
-UID:vojvodina-crvenazvezda-202611070900@cz-calendar
-SEQUENCE:1
-DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 15\nPočetak: potvr
- đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
- tps://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?script=lat\nh
- ttps://www.crvenazvezdafk.com/sr-latn/utakmice/vojvodina---crvena-zvezda-3
-LAST-MODIFIED:20261104T115503Z
-LOCATION:STADION KARAĐORĐE
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-MATCH-ID:2026-27-superligasrbije-15-vojvodina-crvenazvezda
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Radnik (satnica nije potvrđena)
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
