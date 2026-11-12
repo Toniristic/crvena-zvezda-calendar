@@ -4,20 +4,19 @@ PRODID:-//Tony Ristic//Crvena Zvezda Calendar//SR
 X-WR-CALNAME:🔴⚪ Crvena zvezda
 X-WR-TIMEZONE:Europe/Belgrade
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - Radnik (satnica nije potvrđena)
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-DTSTAMP:20261104T115503Z
+SUMMARY:🔴⚪ Crvena zvezda - Radnik
+DTSTART:20261121T170000Z
+DTEND:20261121T190000Z
+DTSTAMP:20261112T121700Z
 UID:crvenazvezda-radnik-202611210900@cz-calendar
-SEQUENCE:1
-DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 16\nVreme početka n
- ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
- .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
- cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda--
- -radnik-2
-LAST-MODIFIED:20261104T115503Z
+SEQUENCE:2
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 16\nPočetak: potvr
+ đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
+ tps://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?script=lat\nh
+ ttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda---radnik-2
+LAST-MODIFIED:20261112T121700Z
 LOCATION:STADION RAJKO MITIĆ
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 X-MATCH-ID:2026-27-superligasrbije-16-crvenazvezda-radnik
 END:VEVENT
