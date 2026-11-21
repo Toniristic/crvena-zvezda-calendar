@@ -37,20 +37,20 @@ TRANSP:TRANSPARENT
 X-MATCH-ID:2026-27-ligakonferencije-4-gent-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚪🔴 Novi Pazar - Crvena zvezda (satnica nije potvrđena)
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
-DTSTAMP:20261104T115503Z
+SUMMARY:⚪🔴 Novi Pazar - Crvena zvezda
+DTSTART:20261129T143000Z
+DTEND:20261129T163000Z
+DTSTAMP:20261121T121356Z
 UID:novipazar-crvenazvezda-202611280900@cz-calendar
-SEQUENCE:1
-DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 17\nVreme početka n
- ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
- .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
- cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/novi-pazar---cr
- vena-zvezda-4
-LAST-MODIFIED:20261104T115503Z
+SEQUENCE:2
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 17\nPočetak: potvr
+ đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
+ tps://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?script=lat\nh
+ ttps://www.crvenazvezdafk.com/sr-latn/utakmice/novi-pazar---crvena-zvezda-
+ 4
+LAST-MODIFIED:20261121T121356Z
 LOCATION:GRADSKI STADION U NOVOM PAZARU
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 X-MATCH-ID:2026-27-superligasrbije-17-novipazar-crvenazvezda
 END:VEVENT
