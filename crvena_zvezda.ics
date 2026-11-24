@@ -38,6 +38,23 @@ TRANSP:TRANSPARENT
 X-MATCH-ID:2026-27-superligasrbije-17-novipazar-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:⚪🔴 Sloven - Crvena zvezda (satnica nije potvrđena)
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+DTSTAMP:20261124T143718Z
+UID:2026-27-kupsrbije-18finala-sloven-crvenazvezda@cz-calendar
+SEQUENCE:0
+DESCRIPTION:Takmičenje: Kup Srbije\nKolo/faza: 1/8 finala\nVreme početka
+  nije potvrđeno. Prikazan je objavljeni datum\; termin je podložan prome
+ ni.\nIzvor: https://www.crvenazvezdafk.com/sr-latn/utakmice/sloven-ruma---
+ crvena-zvezda
+LAST-MODIFIED:20261124T143718Z
+LOCATION:STADION FK SLOVEN
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+X-MATCH-ID:2026-27-kupsrbije-18finala-sloven-crvenazvezda
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:🔴⚪ Crvena zvezda - Železničar (satnica nije potvrđena)
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
