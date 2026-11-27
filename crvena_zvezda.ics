@@ -4,22 +4,6 @@ PRODID:-//Tony Ristic//Crvena Zvezda Calendar//SR
 X-WR-CALNAME:🔴⚪ Crvena zvezda
 X-WR-TIMEZONE:Europe/Belgrade
 BEGIN:VEVENT
-SUMMARY:⚪🔴 Gent - Crvena zvezda
-DTSTART:20261126T200000Z
-DTEND:20261126T220000Z
-DTSTAMP:20261104T115503Z
-UID:2026-27-ligakonferencije-4-gent-crvenazvezda@cz-calendar
-SEQUENCE:0
-DESCRIPTION:Takmičenje: Liga konferencije\nKolo/faza: 4\nPočetak: potvr
- đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
- tps://www.crvenazvezdafk.com/sr-latn/utakmice/gent---crvena-zvezda
-LAST-MODIFIED:20261104T115503Z
-LOCATION:KAA GENT ARENA
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-MATCH-ID:2026-27-ligakonferencije-4-gent-crvenazvezda
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:⚪🔴 Novi Pazar - Crvena zvezda
 DTSTART:20261129T143000Z
 DTEND:20261129T163000Z
@@ -38,37 +22,36 @@ TRANSP:TRANSPARENT
 X-MATCH-ID:2026-27-superligasrbije-17-novipazar-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚪🔴 Sloven - Crvena zvezda (satnica nije potvrđena)
-DTSTART;VALUE=DATE:20261202
-DTEND;VALUE=DATE:20261203
-DTSTAMP:20261124T143718Z
+SUMMARY:⚪🔴 Sloven - Crvena zvezda
+DTSTART:20261202T120000Z
+DTEND:20261202T140000Z
+DTSTAMP:20261127T133243Z
 UID:2026-27-kupsrbije-18finala-sloven-crvenazvezda@cz-calendar
-SEQUENCE:0
-DESCRIPTION:Takmičenje: Kup Srbije\nKolo/faza: 1/8 finala\nVreme početka
-  nije potvrđeno. Prikazan je objavljeni datum\; termin je podložan prome
- ni.\nIzvor: https://www.crvenazvezdafk.com/sr-latn/utakmice/sloven-ruma---
- crvena-zvezda
-LAST-MODIFIED:20261124T143718Z
+SEQUENCE:1
+DESCRIPTION:Takmičenje: Kup Srbije\nKolo/faza: 1/8 finala\nPočetak: potv
+ rđena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: h
+ ttps://www.crvenazvezdafk.com/sr-latn/utakmice/sloven-ruma---crvena-zvezda
+LAST-MODIFIED:20261127T133243Z
 LOCATION:STADION FK SLOVEN
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 X-MATCH-ID:2026-27-kupsrbije-18finala-sloven-crvenazvezda
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔴⚪ Crvena zvezda - Železničar (satnica nije potvrđena)
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
-DTSTAMP:20261104T115503Z
+SUMMARY:🔴⚪ Crvena zvezda - Železničar
+DTSTART:20261205T150000Z
+DTEND:20261205T170000Z
+DTSTAMP:20261127T133243Z
 UID:crvenazvezda-železničar-202612060900@cz-calendar
-SEQUENCE:1
-DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 18\nVreme početka n
- ije potvrđeno. Prikazan je objavljeni datum\; termin je podložan promeni
- .\nIzvor: https://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?s
- cript=lat\nhttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda--
- -zheleznichar-2
-LAST-MODIFIED:20261104T115503Z
+SEQUENCE:2
+DESCRIPTION:Takmičenje: Superliga Srbije\nKolo/faza: 18\nPočetak: potvr
+ đena satnica (Europe/Belgrade). Trajanje od 2 sata je procena.\nIzvor: ht
+ tps://fss.rs/takmicenje/mozzart-bet-super-liga-srbije-26-27/?script=lat\nh
+ ttps://www.crvenazvezdafk.com/sr-latn/utakmice/crvena-zvezda---zheleznicha
+ r-2
+LAST-MODIFIED:20261127T133243Z
 LOCATION:STADION RAJKO MITIĆ
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 X-MATCH-ID:2026-27-superligasrbije-18-crvenazvezda-zeleznicar
 END:VEVENT
